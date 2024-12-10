@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* 背景颜色 */
+  }
+  
+  .message {
+    font-size: 5em; /* 非常大的字体 */
+    font-weight: bold; /* 加粗字体 */
+    text-align: center; /* 文本居中 */
+    background: -webkit-linear-gradient(left, #c45fff, #fed47b); /* 渐变背景 */
+    -webkit-background-clip: text; /* 背景剪贴到文本 */
+    -webkit-text-fill-color: transparent; /* 使文本颜色透明，显示背景 */
+  }

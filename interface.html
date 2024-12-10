@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interfacestyle.css">
+    <title>interface</title>
+</head>
+ 
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>登录</h2>
+                    <form action="index.html" method="get">
+                        <div class="inputBox">
+                            <input type="text" name="username" placeholder="姓名">
+ 
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" name="password" placeholder="密码">
+ 
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="登录">
+ 
+                        </div>
+                        <p class="forget">忘记密码?<a href="forget.html">
+                                点击这里
+                            </a></p>
+                        <p class="forget">没有账户?<a href="register.html">
+                                注册
+                            </a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+ 
+<script>    document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+
+        var username = document.querySelector('input[name="username"]').value;
+        var password = document.querySelector('input[name="password"]').value;
+
+        if (username === "" || password === "") {
+            alert("所有字段都是必填的！");
+            e.preventDefault(); 
+            return;
+        }
+     
+    });
+});
+</script>
+</html>

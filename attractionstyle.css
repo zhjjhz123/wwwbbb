@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px; /* 减小标题字体大小 */
+    }
+    nav ul li {
+        margin: 0 5px; /* 减小导航项之间的间距 */
+        flex-direction: column; /* 将子元素从水平排列改为垂直排列 */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px; /* 进一步减小标题字体大小 */
+    }
+    nav ul li {
+        font-size: 16px; /* 减小导航链接的字体大小 */
+        flex-direction: column; /* 将子元素从水平排列改为垂直排列 */
+        }
+    }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* 平滑颜色和下划线变化 */
+}
+
+/* 当前活动页面的链接样式 */
+nav a.active {
+    color: #007BFF; /* 活动链接的颜色 */
+    border-bottom: 2px solid #007BFF; /* 活动链接的下划线 */
+}
+
+/* 鼠标悬停时的链接样式 */
+nav a:hover {
+    color: #0056b3; /* 悬停时的颜色 */
+    text-decoration: underline; /* 悬停时添加下划线 */
+}
+
+/* 点击时的链接样式 */
+nav a:active {
+    text-decoration: underline; /* 点击时添加下划线 */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#showcase {
+    text-align: center;
+    background: #f0f0f0;
+}
+
+#showcase img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+.cuisine-item, .accommodation-item, .culture-item {
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    display: flex; /* 使用Flex布局 */
+    align-items: center; /* 垂直居中 */
+}
+
+.container img {
+    margin-right: 5px; /* 图片和文字之间的间距，可调整 */
+    vertical-align: middle; /* 确保图片和文字基线对齐 */
+}
+
+.container span {
+    line-height: 1; /* 保证文字在图片旁居中 */
+}
